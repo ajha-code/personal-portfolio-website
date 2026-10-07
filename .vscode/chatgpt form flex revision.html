@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="chatgpt form flex revision.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-text">
+            <h1>Student Portal</h1>
+            <h3>Register for your profile</h3>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="form-container">
+
+            <h2>Registration Form</h2>
+
+            <form>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+
+                <label for="age">Age:</label>
+                <select id="age">
+                    <option value="" disabled selected>Select age</option>
+                    <option value="under18">Under 18</option>
+                    <option value="18-25">18 - 25</option>
+                    <option value="26-40">26 - 40</option>
+                    <option value="40+">Above 40</option>
+                </select>
+
+
+                <label>Gender:</label>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+
+                </div>
+
+
+                <label>Skills:</label>
+
+                <div class="skills-group">
+
+                    <label>
+                        <input type="checkbox" value="html">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="css">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="javascript">
+                        JavaScript
+                    </label>
+
+                </div>
+
+
+                <label for="about">About yourself:</label>
+
+                <textarea id="about" placeholder="Write something about yourself"></textarea>
+
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
+
+        <section class="skills-container">
+
+            <h2>My Skills</h2>
+
+            <table>
+
+                <caption>Technical Skills</caption>
+
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                        <th>Experience</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>HTML</td>
+                        <td>Advanced</td>
+                        <td>1 Year</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediate</td>
+                        <td>8 Months</td>
+                    </tr>
+
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                        <td>3 Months</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

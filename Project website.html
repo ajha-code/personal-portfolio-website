@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="Project website.css">
+</head>
+
+<body>
+
+
+    <div class="header"> 
+    <img src="Images/WhatsApp Image 2026-06-10 at 1.58.27 PM.jpeg" alt="My Picture" >
+    
+    <div class="header-text">
+    <h1>APARNA JHA</h1>
+    <h3>(Aspiring Front end Developer)</h3>
+    </div>
+    </div>
+        
+    <hr>
+    
+    <nav>
+        
+             <a href="#about">About Me</a> 
+             <a href="#education">Qualification</a>
+             <a href="#skills">Skills</a> 
+             <a href="#projects">Projects</a> 
+             <a href="#registrationform">Registration form</a> 
+             <a href="#contact">Contact</a> 
+        
+    </nav>
+
+    <button id="themebutton">Dark mode</button>
+         
+    <main>
+
+    <section id="about">
+                
+    <h3><em>About Me</em></h3>
+    <p> This is my personal portfolio website created using HTML,CSS, and JavaScript as part of my journey into Front-End Development.</p><br>
+
+    
+    <dl>
+        <dt><em>Qualification</em></dt>
+    <dd>I have done my Bachelor of Engineering in Mechatronics from Symbiosis University of applied sciences.</dd><br>
+
+        <dt><em>Experience</em></dt>
+   <dd> 1.6 years of experience as an Engineer(Software EV engineering team) in EV based company EKA Mobility.I have worked on software-related tools and ECU programming/diagnostics, VCU flashing, CAN communication, and software tools for electric buses.</dd><br>
+          
+    <dt><em>Career Break | Dec 2024- Present</em></dt>  
+     <dd>Career break due to personal commitments. Currently transitioning into Front-End Development and building hands-on projects using HTML, CSS and JavaScript.<br>
+  </dd></dl>
+   
+
+
+   <h3>Career goal</h3>
+   <p> My goal is to become a skilled Front-End Developer, build meaningful projects, and continuously grow with new technologies.</p>
+
+   <h3>Hobbies</h3>
+   <ul>
+    <li>Badminton</li>
+    <li>Yoga</li>
+   </ul>
+    
+        </section>
+
+
+       <section id ="education">
+
+   <h3>Education</h3>
+
+   <table>
+    <thead>
+    <tr>
+        <th>Degree</th>
+        <th>School/College</th>
+        <th>Year</th>
+        <th>Percentage</th>
+    </tr>
+    </thead>
+
+    <tbody>
+        
+    <tr>      
+        <td>10th</td>
+        <td>PPS</td>
+        <td>2016</td>
+        <td>94%</td>
+    </tr>
+        <tr>
+        <td>12th</td>
+        <td>PPS</td>
+        <td>2018</td>
+        <td>68%</td>
+        </tr>
+    </tbody>
+</table>
+
+        </section>  
+
+
+        <section id ="skills">
+            
+   <h3>Skills</h3>
+   <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Quick learner</li>
+    </ol>
+
+        </section>
+
+
+        <section id ="projects">
+        
+    <h3>Projects</h3>
+   <dl>
+    <dt><strong>Arduino based robot</strong></dt>
+    <dd>A sensor based robot was made using arduino which follows black and white strips to move</dd><br>
+  
+    <dt><strong>Sensor based farmer equipment</strong></dt>
+    <dd>A sensor based project which tells after how much time new soil should be used to sow new crop</dd>
+   </dl>
+
+        </section>
+
+
+        <section id ="registrationform">
+
+             <h3>Registration Form</h3>
+    <form>
+        <label for="username">User name</label>
+        <input type="text" id="username" name="username" placeholder="User name" minlength="5" maxlength="7" required><br><br>
+       
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+       
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" minlength="5"  maxlength="7" ><br><br>
+
+        <label for="gender">Gender : </label><br><br>
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male"><br><br>
+
+    
+        <label for="agegroup">Age group</label>
+        <select id="agegroup" name="agegroup">
+            <option value="" disabled selected hidden>Select age</option>
+            <option value="kid">Under 18</option>
+            <option value="Adult"> 18 Above </option></select><br><br>
+
+            <label for="request"><u>Any request:</u></label><br><br>
+            <textarea id="request" name="request" rows="6" cols="16" placeholder="Type Request here"></textarea><br><br>
+      
+            <button type="submit">Register</button>
+
+            <p id="formmessage"></p>
+       
+        </form>
+
+        </section>
+
+        <section id ="contact">
+
+             <footer>
+            <h3><b>Contact</b></h3>
+            <ul>
+            <li><em>Mail at: <a href="mailto:aparna.jha8003@gmail.com">aparna.jha8003@gmail.com</a></em></li>
+            <li><em>Github: <a href="https://github.com/ajha-code" target="_blank"> Visit here </a></em></li>
+            <li><em>Phone number: <a href="tel:9770729954">9770729954</a></em></li><br><br>
+           
+           
+        </ul>
+        </footer>
+
+        </section>
+
+    </main>
+      <script src="Project website.js"> </script>
+</body>
+</html>

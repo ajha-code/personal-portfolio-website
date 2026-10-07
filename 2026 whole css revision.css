@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {box-sizing: border-box; /*Include padding and border inside the specified width*/
+margin:0px; 
+padding:0px;} /*by default every element have diff margin/padding values so doing 
+this remove those default values and later we can give values acc to ourselves */
+    
+html{
+    scroll-behavior: smooth; /*smooth scrolling effect when clicking on anchor links*/
+}
+
+body {background-color: white; color: black;
+     margin:10px; padding:10px /*Margin-10px outside spacing from the body/page edge
+Padding-10px inside spacing before the content starts*/
+}
+
+img{width:120px; height:150px; border:2px solid black; object-fit:cover}/*object-fit:cover-This property specifies how the content of an element should be resized to fit its container.*/
+
+nav {display:flex; justify-content:flex-start; gap:25px; padding:15px;}
+
+nav a{color:black; text-decoration:none; cursor:pointer; font-weight:bold;}
+
+nav a:hover{color:blue; text-decoration:underline;}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px; /*space bet img and text*/
+    padding: 5px; /*space bet content(img+text) and header edge*/
+}
+
+.header-text h1 {
+    font-size: 30px;
+}
+
+.header-text h3 {
+    font-size: 15px;
+    line-height: 3px; /*line-height- space bet lines of text*/
+}
+
+/*font-family tells the browser which font to use in order like 1st 'Arial' then 'sans-serif', whtever is present*/
+h1{font-family:Arial, sans-serif; color: black; text-align: center; text-decoration:underline; line-height: 2;}
+h2{font-family:Arial, sans-serif; color: black; text-align: left; line-height: 3;}
+h3{font-family:Arial, sans-serif; color: black; text-align: left; text-decoration:underline; line-height: 4;}
+/*h3 inside the .header-text will have a line-height of 3px and outside .header text all h3 will have a line-height of 4*/
+
+p{font-weight: normal; line-height: 1.5;}
+
+/*Width decides how wide the table or a column/cell will be*/
+table {border-collapse: collapse; width: 30%;}
+
+/*Padding decides space bet content and table*/
+th,td{border: 2px solid black; padding:8px;}
+
+th{text-align:left;}
+
+
+
+form {width:500px;
+     padding:20px;
+    border:2px solid black;
+    box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.454);}
+
+    form > label {font-weight: bold;} /* >= child selector */
+
+    input, select, textarea {width:100%;
+                           padding:10px;
+                           border:2px solid black;
+                           margin-bottom:10px;
+                           margin-top:5px;
+                            }
+
+    input[type="radio"] {
+    width: auto;
+    padding: 0;
+    border: none;
+    margin: 0;
+    accent-color:blue;
+    margin-right:50px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        outline: 1px solid rgba(0, 0, 255, 0.529);
+    }
+      /* :focus= pseudo class:will chnage after its selection */
+
+
+/*here ':checked' [X offset(left/right) Y offset(up/down) blur width of shadow] is pseudo-class which specifies special state of 
+selected elements.More are- :active,  :hover, :nth-of-type, :nth-child etc */
+    input[type="radio"]:checked{ 
+        box-shadow: 0px 0px 5px 1px rgb(218, 51, 79);
+    }
+
+/*Radio button properties; also margin-right/left px is decided by how much space 
+to keep from left/right side of rb*/
+
+/*<b>-bold tells browser, THIS TEXT SHOULD BE BOLD
+<strong>-tells browser same but is Semantic html and indicates importance
+<font-weight: bold/400/500>-tells browser to set the weight of the font */
+
+
+              
+
+/*To move the button to center we used:
+  display: block; → makes the button behave like a block element.
+  margin: 20px auto; → auto on left and right divides the available space equally, putting the button in the center.
+                20px → adds space above and below.
+ margin: auto; is easiest for one button to get eql space on left and right side.
+ OR we can also use
+  display:flex; justify-content:center;
+  but this will be useful if we have multiple elements to arrange in center as here 'form' becomes a flex container and move its child ('button') to horizontal center where button is the flex element*/
+button{display:block; margin:20px auto;
+       border: 2px solid black; border-radius:5px; background-color:rgb(0, 6, 7); color:white; padding: 8px; cursor:pointer;}
+
+       button:hover{background-color:sandybrown; transition:2s;}
+
+
+/*Responsive design-Responsive design means your website should adjust 
+properly according to different screen sizes, such as: mobile,laptop.
+ @Media query- A media query allows you to apply CSS only when a certain
+condition is true like
+
+@media (max-width: 600px) { }
+
+This means to apply the CSS written inside { } when the screen width is 600px or less.
+ex- 
+form {width:400px;}
+
+On a smaller screen then 400px, the form could overflow,so we can write:
+
+@media (max-width: 600px) {
+form {width:100%;} }
+
+width:100% means to take 100% of the available width of the screen.
+So, on smaller screens, the form will adjust to fit the screen size.
+                          OR a better approach will be:
+
+form {width:100%;
+      max-width: 400px;}                          
+
+Means on a small screen use available width
+and on a larger screen dont become wider then 400px.*/
+
+@media (max-width: 600px) {
+    .header{
+        flex-direction:column;
+        align-items:center; /*When using flex dir in column use align-items instead of justify-contents*/
+        gap:10px; /*space bet img and text*/
+                            }
+
+    .header-text{
+         text-align:center;
+    }
+
+    .nav{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    form{
+        width:100%;
+    }
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+
+    th,td {padding:5px;}
+
+    textarea {width:100%;}
+
+    iframe {width:100%; height:auto;}
+}
+
+
